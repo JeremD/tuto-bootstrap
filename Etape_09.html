@@ -9,7 +9,8 @@
 			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 			crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css" />
-
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Exemple d'utilisation de Bootstrap</title> <!-- Ce titre s'affiche dans l'onglet du navigateur -->
 	</head>
 	<body>
@@ -99,13 +100,24 @@
 						</a>
 					</div>
 					<!-- Fin Carousel -->
-					<div>
-						<form method="post" action="#">
-							<label for="recherche">Rechercher : </label><input type="text"
-								name="recherche" id="recherche" />
-							<input type="submit" name="btrechercher" value="Rechercher">
-						</form>
+					<!-- Formulaire de recherche -->
+					<div class="card">
+						<div class="card-header">
+							<i class="fa fa-search"></i> Rechercher
+						</div>
+						<div class="card-body">
+							<form method="post" action="#">
+								<div class="form-group">
+									<input class="form-control" type="text" name="recherche" id="recherche"
+										/>
+								</div>
+								<div class="form-group">
+									<button type="button" class="btn-success form-control"> Rechercher</button>
+								</div>
+							</form>
+						</div>
 					</div>
+					<!-- Fin Formulaire de recherche -->
 				</div>
 				<!-- Fin Colonne de gauche -->
 				<!-- COLONNE DE DROITE -->
